@@ -1,0 +1,233 @@
+{
+  "contractName": "IEatherTransporter",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "openEather",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"openEather\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEatherTransporter.sol\":\"IEatherTransporter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEatherTransporter.sol\":{\"keccak256\":\"0x834cc62566b0b94dd0a92536ce7d80fcb67e710a88d1e7b637d753b87da4315c\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://64518f913138f6b5c6abd4414b33a5cf518b5371852fa25f87e71c6e2eb5a1ce\",\"dweb:/ipfs/QmUUFLv884wmkceh6wLVhE4HrNKP2aqjvA7ZRmZVjUN4GY\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\ninterface IEatherTransporter {\n  function openEather() external view returns (bool);\n}\n",
+  "sourcePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEatherTransporter.sol",
+  "ast": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEatherTransporter.sol",
+    "exportedSymbols": {
+      "IEatherTransporter": [
+        9249
+      ]
+    },
+    "id": 9250,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9243,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:18"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9249,
+        "linearizedBaseContracts": [
+          9249
+        ],
+        "name": "IEatherTransporter",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8868ff2b",
+            "id": 9248,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "openEather",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9244,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "109:2:18"
+            },
+            "returnParameters": {
+              "id": 9247,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9246,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9248,
+                  "src": "135:4:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 9245,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:4:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:6:18"
+            },
+            "scope": 9249,
+            "src": "90:51:18",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9250,
+        "src": "57:86:18"
+      }
+    ],
+    "src": "33:111:18"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEatherTransporter.sol",
+    "exportedSymbols": {
+      "IEatherTransporter": [
+        9249
+      ]
+    },
+    "id": 9250,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9243,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:18"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9249,
+        "linearizedBaseContracts": [
+          9249
+        ],
+        "name": "IEatherTransporter",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8868ff2b",
+            "id": 9248,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "openEather",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9244,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "109:2:18"
+            },
+            "returnParameters": {
+              "id": 9247,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9246,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9248,
+                  "src": "135:4:18",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 9245,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:4:18",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:6:18"
+            },
+            "scope": 9249,
+            "src": "90:51:18",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9250,
+        "src": "57:86:18"
+      }
+    ],
+    "src": "33:111:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-01-05T05:27:46.072Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

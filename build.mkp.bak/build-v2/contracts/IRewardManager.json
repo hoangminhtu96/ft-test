@@ -1,0 +1,527 @@
+{
+  "contractName": "IRewardManager",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_source",
+          "type": "uint8"
+        },
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "addReward",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_landLord",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "addLandShared",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_landLord\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"addLandShared\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_source\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"addReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IRewardManager.sol\":\"IRewardManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IRewardManager.sol\":{\"keccak256\":\"0x5a3a6ae638b5b7991b972da0f6805047a91269cf22feea2080c6d64190fbe6fd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59fc307bc6aed64bd733c16daa02cd001356048217b58c059711b62da78446c7\",\"dweb:/ipfs/QmVdgtTEvQheYz9vBbBpAdpFQxox7WhAT9iVUC23FKWh4v\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\n\ninterface IRewardManager {\n  function addReward(uint8 _source, address _user, uint _amount) external;\n  function addLandShared(address _landLord, uint _amount) external;\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IRewardManager.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IRewardManager.sol",
+    "exportedSymbols": {
+      "IRewardManager": [
+        10753
+      ]
+    },
+    "id": 10754,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10736,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10753,
+        "linearizedBaseContracts": [
+          10753
+        ],
+        "name": "IRewardManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "2c21d325",
+            "id": 10745,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addReward",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10743,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10738,
+                  "mutability": "mutable",
+                  "name": "_source",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10745,
+                  "src": "105:13:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 10737,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "105:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10740,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10745,
+                  "src": "120:13:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10739,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "120:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10742,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10745,
+                  "src": "135:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10741,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "104:44:30"
+            },
+            "returnParameters": {
+              "id": 10744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:0:30"
+            },
+            "scope": 10753,
+            "src": "86:72:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9fc16f95",
+            "id": 10752,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addLandShared",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10750,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10747,
+                  "mutability": "mutable",
+                  "name": "_landLord",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10752,
+                  "src": "184:17:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10746,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10749,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10752,
+                  "src": "203:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10748,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "203:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:33:30"
+            },
+            "returnParameters": {
+              "id": 10751,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "225:0:30"
+            },
+            "scope": 10753,
+            "src": "161:65:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10754,
+        "src": "57:171:30"
+      }
+    ],
+    "src": "33:196:30"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IRewardManager.sol",
+    "exportedSymbols": {
+      "IRewardManager": [
+        10753
+      ]
+    },
+    "id": 10754,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10736,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10753,
+        "linearizedBaseContracts": [
+          10753
+        ],
+        "name": "IRewardManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "2c21d325",
+            "id": 10745,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addReward",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10743,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10738,
+                  "mutability": "mutable",
+                  "name": "_source",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10745,
+                  "src": "105:13:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 10737,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "105:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10740,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10745,
+                  "src": "120:13:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10739,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "120:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10742,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10745,
+                  "src": "135:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10741,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "104:44:30"
+            },
+            "returnParameters": {
+              "id": 10744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:0:30"
+            },
+            "scope": 10753,
+            "src": "86:72:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9fc16f95",
+            "id": 10752,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addLandShared",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10750,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10747,
+                  "mutability": "mutable",
+                  "name": "_landLord",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10752,
+                  "src": "184:17:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10746,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10749,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10752,
+                  "src": "203:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10748,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "203:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:33:30"
+            },
+            "returnParameters": {
+              "id": 10751,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "225:0:30"
+            },
+            "scope": 10753,
+            "src": "161:65:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10754,
+        "src": "57:171:30"
+      }
+    ],
+    "src": "33:196:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:51:26.516Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

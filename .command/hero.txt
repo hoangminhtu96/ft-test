@@ -1,0 +1,22 @@
+accounts = await web3.eth.getAccounts()
+heroNFT = await HeroNFT.deployed()
+
+heroNFT.addHeroClass('Foo2', 'Bar2', 'Lorem2', [100, 100, 100, 100, 100, 100, 100], accounts[0])
+heroNFT.updateMintAdmin(accounts[0], true)
+heroNFT.updateTransferable(accounts[1], true)
+heroNFT.updateExclusive(accounts[1], true)
+
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 40)
+
+response = await heroNFT.mintHeroes(accounts[1], 1, web3.utils.toWei('180', 'ether'), 1)
+
+heroNFT.transferFrom(accounts[1], accounts[2], response.logs[0].args.tokenId.toNumber(), { from: accounts[1] })

@@ -1,0 +1,37 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.0;
+
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+
+interface IHeroNFT {
+  function burn(uint256 tokenId) external;
+  function transferFrom(address from, address to, uint256 tokenId) external;
+}
+
+contract TransferHero is Initializable {
+  IHeroNFT public heroNFT;
+  address public owner;
+
+  function initialize(address _heroNFTAddress) virtual public initializer {
+    heroNFT = IHeroNFT(_heroNFTAddress);
+    owner = msg.sender;
+  }
+
+  modifier onlyOwner() {
+    require(msg.sender == owner, "UpdateHero: Invalid caller.");
+    _;
+  }
+
+  function burnHeroes(uint[] calldata _tokenIds) external onlyOwner {
+    for (uint i = 0; i < _tokenIds.length; i += 1) {
+      heroNFT.burn(_tokenIds[i]);
+    }
+  }
+
+  function transferHeroes(uint[] calldata _tokenIds, address _from, address _to) external onlyOwner {
+    for (uint i = 0; i < _tokenIds.length; i += 1) {
+      heroNFT.transferFrom(_from, _to, _tokenIds[i]);
+    }
+  }
+}
+

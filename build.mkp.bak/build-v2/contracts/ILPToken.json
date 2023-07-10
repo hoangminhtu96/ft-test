@@ -1,0 +1,520 @@
+{
+  "contractName": "ILPToken",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "who",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getReserves",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"who\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getReserves\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/ILPToken.sol\":\"ILPToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/ILPToken.sol\":{\"keccak256\":\"0x4643b90464aacf9f8d6c1e5703ef24ef515ed9e82456fd2ef5b0a8731f102764\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ee290b74dd121ae0e12345e1b81ff7ee51c7cfbd9e4f835544615cb34d2f9828\",\"dweb:/ipfs/QmNrnCyWd7p2eK5Uf5awtj8TpM1YGBeFobiNgNE3WBoGSa\"]},\"/Users/dung/Documents/sources/fota-dapp/contracts/libs/zeppelin/token/BEP20/IBEP20.sol\":{\"keccak256\":\"0xa18e9f49409936fc9c60abe87223c1f59f86b3d7415adc252380f6b5c5180fba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://35d0a56192701990eadd363ee14e7a044359371bd201339d1d657ca0cd796a08\",\"dweb:/ipfs/Qmbubk8mHF1DoLP8Sia51TkpVQ4eSdvasxfYjWYWmi9DYi\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\n\nimport \"../libs/zeppelin/token/BEP20/IBEP20.sol\";\n\ninterface ILPToken is IBEP20 {\n  function getReserves() external view returns (uint, uint);\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/ILPToken.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/ILPToken.sol",
+    "exportedSymbols": {
+      "IBEP20": [
+        14171
+      ],
+      "ILPToken": [
+        10671
+      ]
+    },
+    "id": 10672,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10660,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:28"
+      },
+      {
+        "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/libs/zeppelin/token/BEP20/IBEP20.sol",
+        "file": "../libs/zeppelin/token/BEP20/IBEP20.sol",
+        "id": 10661,
+        "nodeType": "ImportDirective",
+        "scope": 10672,
+        "sourceUnit": 14172,
+        "src": "57:49:28",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 10662,
+              "name": "IBEP20",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 14171,
+              "src": "130:6:28"
+            },
+            "id": 10663,
+            "nodeType": "InheritanceSpecifier",
+            "src": "130:6:28"
+          }
+        ],
+        "contractDependencies": [
+          14171
+        ],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10671,
+        "linearizedBaseContracts": [
+          10671,
+          14171
+        ],
+        "name": "ILPToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0902f1ac",
+            "id": 10670,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReserves",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10664,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "161:2:28"
+            },
+            "returnParameters": {
+              "id": 10669,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10666,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10670,
+                  "src": "187:4:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10665,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "187:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10668,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10670,
+                  "src": "193:4:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10667,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "193:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "186:12:28"
+            },
+            "scope": 10671,
+            "src": "141:58:28",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10672,
+        "src": "108:93:28"
+      }
+    ],
+    "src": "33:169:28"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/ILPToken.sol",
+    "exportedSymbols": {
+      "IBEP20": [
+        14171
+      ],
+      "ILPToken": [
+        10671
+      ]
+    },
+    "id": 10672,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10660,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:28"
+      },
+      {
+        "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/libs/zeppelin/token/BEP20/IBEP20.sol",
+        "file": "../libs/zeppelin/token/BEP20/IBEP20.sol",
+        "id": 10661,
+        "nodeType": "ImportDirective",
+        "scope": 10672,
+        "sourceUnit": 14172,
+        "src": "57:49:28",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 10662,
+              "name": "IBEP20",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 14171,
+              "src": "130:6:28"
+            },
+            "id": 10663,
+            "nodeType": "InheritanceSpecifier",
+            "src": "130:6:28"
+          }
+        ],
+        "contractDependencies": [
+          14171
+        ],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10671,
+        "linearizedBaseContracts": [
+          10671,
+          14171
+        ],
+        "name": "ILPToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0902f1ac",
+            "id": 10670,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReserves",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10664,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "161:2:28"
+            },
+            "returnParameters": {
+              "id": 10669,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10666,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10670,
+                  "src": "187:4:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10665,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "187:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10668,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10670,
+                  "src": "193:4:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10667,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "193:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "186:12:28"
+            },
+            "scope": 10671,
+            "src": "141:58:28",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10672,
+        "src": "108:93:28"
+      }
+    ],
+    "src": "33:169:28"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:51:26.515Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

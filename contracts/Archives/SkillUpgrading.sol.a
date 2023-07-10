@@ -1,0 +1,94 @@
+// SPDX-License-Identifier: GPL
+
+pragma solidity 0.8.0;
+
+import "../interfaces/IGameNFT.sol";
+import "../libs/fota/Auth.sol";
+import "../libs/fota/Math.sol";
+import "../interfaces/IMarketPlace.sol";
+
+contract SkillUpgrading is Auth {
+  using Math for uint;
+  IGameNFT public heroNft;
+  IGameNFT public itemNft;
+  IMarketPlace public marketplace;
+
+  struct UpgradingInfo {
+    uint currentLevel;
+    uint8 section;
+    uint8 skillIndex;
+    uint eatherId;
+  }
+
+  event Upgraded(address indexed user, uint indexed tokenId, UpgradingInfo upgradingInfo);
+
+  function initialize(
+    address _mainAdmin,
+    address _heroNft,
+    address _itemNft
+  ) public initializer {
+    Auth.initialize(_mainAdmin);
+    heroNft = IGameNFT(_heroNft);
+    itemNft = IGameNFT(_itemNft);
+  }
+
+  function skillUp(
+    uint _tokenId,
+    uint _eatherId
+  ) external {
+    (uint currentLevel, uint8 skillIndex) = _validateHero(_tokenId);
+    (uint eatherPrice, uint fotaOwnPrice) = _validateEatherRight(_eatherId);
+    uint8 section = uint8(currentLevel / 5);
+    UpgradingInfo memory upgradingInfo = UpgradingInfo(currentLevel, section, skillIndex, _eatherId);
+    _upgradeSkill(_tokenId, upgradingInfo, eatherPrice, fotaOwnPrice);
+    itemNft.burn(_eatherId);
+  }
+
+  // ADMIN FUNCTIONS
+
+  function setContracts(address _heroNft, address _itemNft, address _marketPlace) external onlyMainAdmin {
+    heroNft = IGameNFT(_heroNft);
+    itemNft = IGameNFT(_itemNft);
+    marketplace = IMarketPlace(_marketPlace);
+  }
+
+  // PRIVATE FUNCTIONS
+
+  function _upgradeSkill(
+    uint _tokenId,
+    UpgradingInfo memory _upgradingInfo,
+    uint _eatherPrice,
+    uint _eatherFotaOwnPrice
+  ) private {
+    (,,,,uint ownPrice,,) = heroNft.heroes(_tokenId);
+    uint heroFOTAOwnPrice = heroNft.fotaOwnPrices(_tokenId);
+    heroNft.updateAllOwnPrices(_tokenId, ownPrice + _eatherPrice, heroFOTAOwnPrice + _eatherFotaOwnPrice);
+    heroNft.skillUp(_tokenId, _upgradingInfo.skillIndex);
+    emit Upgraded(msg.sender, _tokenId, _upgradingInfo);
+  }
+
+  function _validateHero(uint _tokenId) private view returns (uint, uint8) {
+    (,,,,,uint8 level, uint experience) = heroNft.getHero(_tokenId);
+    require(level >= 1, "Upgrading: level invalid");
+    bool isOwner = heroNft.ownerOf(_tokenId) == msg.sender;
+    if (!isOwner) {
+      bool isRentingHero = marketplace.currentRentingHero(_tokenId) == msg.sender;
+      require(isRentingHero, "Upgrading: hero invalid");
+    }
+    uint32 experienceCheckpoint = heroNft.experienceCheckpoint(level + 1);
+    require(experience == experienceCheckpoint, "Upgrading: Experience invalid");
+    uint8 levelMod5 = uint8(level % 5);
+    require(levelMod5 != 1 && levelMod5 != 3, "Upgrading: Level invalid");
+    uint8 skillIndex = levelMod5 == 0 ? 0 : levelMod5 == 2 ? 1 : 2;
+    return (level, skillIndex);
+  }
+
+  function _validateEatherRight(uint _eatherId) private view returns (uint, uint) {
+    require(itemNft.ownerOf(_eatherId) == msg.sender, "Upgrading: not owner of item");
+    bool approved = itemNft.isApprovedForAll(msg.sender, address(this)) || itemNft.getApproved(_eatherId) == address(this);
+    require(approved, "Upgrading: please approve eather item first");
+    (,,,uint ownPrice,) = itemNft.getItem(_eatherId);
+    uint fotaOwnPrice = itemNft.fotaOwnPrices(_eatherId);
+    return (ownPrice, fotaOwnPrice);
+  }
+}

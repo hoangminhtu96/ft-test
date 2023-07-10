@@ -1,0 +1,38 @@
+{
+  "name": "fota-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deployLocal": "rm .openzeppelin/unknown-1337.json && truffle migrate --reset",
+    "deployTestnet": "rm .openzeppelin/unknown-97.json.hero1.0 && truffle migrate --network testnet --reset"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.3.1",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/contracts-upgradeable": "^4.2.0",
+    "@openzeppelin/truffle-upgrades": "^1.8.1",
+    "@truffle/hdwallet-provider": "1.4.2",
+    "apr-map": "^3.0.3",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bn": "^0.1.1",
+    "dotenv": "^4.0.0",
+    "eip-712": "^0.4.3",
+    "ethereumjs-util": "^7.1.0",
+    "ethers": "^5.4.6",
+    "moment": "^2.29.1",
+    "truffle-plugin-verify": "^0.5.11"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "lodash": "^4.17.21",
+    "truffle-contract-size": "^2.0.1"
+  }
+}

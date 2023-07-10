@@ -1,0 +1,21 @@
+mkp: 0x337953680070D6D625B82e17bfdBe39B99fA2933
+hero: 0x47748AE473D8b29B25E33Fccb868De1D60db1464
+
+
+accounts = await web3.eth.getAccounts()
+app = await EnergyManager.deployed()
+hero = await HeroNFT.deployed()
+
+hero.updateMintAdmin(accounts[0], true)
+hero.updateEnergyManager(app.address)
+hero.mintHero(accounts[0], 1, 1, 1)
+
+result = await app.updateEnergy(accounts[0], 0)
+result.logs[0].args
+e = await app.getUserCurrentEnergy(accounts[0])
+e.toString()
+
+startOfDay = await app._getStartOfDay()
+startOfDay.toString()
+
+e = await app.energies(accounts[0])

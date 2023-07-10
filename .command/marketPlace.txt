@@ -1,0 +1,35 @@
+accounts = await web3.eth.getAccounts()
+heroNFT = await HeroNFT.deployed()
+itemNFT = await ItemNFT.deployed()
+citizen = await Citizen.deployed()
+fota = await FOTAToken.deployed()
+app = await MarketPlace.deployed()
+
+value1BN = web3.utils.toWei('1000000000000000000')
+value1MilBN = web3.utils.toWei('1000000000000000000000000')
+sevenDays = 7*24*3600
+fota.releaseIDOAllocation(accounts[2])
+fota.approve(app.address, value1MilBN, { from: accounts[2] })
+citizen.setWhiteList(accounts[0], true)
+citizen.register(accounts[1], 'USER1', accounts[0], { from: accounts[1] })
+citizen.register(accounts[2], 'USER2', accounts[1], { from: accounts[2] })
+itemNFT.updateMintAdmin(app.address, true)
+heroNFT.updateMintAdmin(app.address, true)
+app.setRemainingSale(0, 18, 1)
+app.setRemainingSale(1, 101, 1)
+
+app.takeFounding(0, 18, 0, { from: accounts[2] })
+
+itemNFT.updateMintAdmin(accounts[0], true)
+heroNFT.updateMintAdmin(accounts[0], true)
+itemNFT.setApprovalForAll(app.address, true)
+heroNFT.setApprovalForAll(app.address, true)
+app.setMinGene(1)
+
+balance = await fota.balanceOf(accounts[1])
+balance.toString()
+
+app.takeFounding(1, 101, 0, { from: accounts[2] })
+
+app.makeOrder(0, 1, token0, value1BN, value1BN, sevenDays, sevenDays)
+app.cancelOrder(1, token0)

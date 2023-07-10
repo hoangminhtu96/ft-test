@@ -1,0 +1,1236 @@
+{
+  "contractName": "IMarketPlace",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "fotaToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "busdToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "usdtToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "citizen",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMarketPlace.OrderKind",
+          "name": "_kind",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "enum IMarketPlace.PaymentCurrency",
+          "name": "_paymentCurrency",
+          "type": "uint8"
+        }
+      ],
+      "name": "takeOrder",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paymentType",
+      "outputs": [
+        {
+          "internalType": "enum IMarketPlace.PaymentType",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"busdToken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"citizen\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"fotaToken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"paymentType\",\"outputs\":[{\"internalType\":\"enum IMarketPlace.PaymentType\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum IMarketPlace.OrderKind\",\"name\":\"_kind\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"enum IMarketPlace.PaymentCurrency\",\"name\":\"_paymentCurrency\",\"type\":\"uint8\"}],\"name\":\"takeOrder\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"usdtToken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IMarketPlace.sol\":\"IMarketPlace\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IGameNFT.sol\":{\"keccak256\":\"0x99a33644898828f3e5cece6761c9d4e98b6ec9d21114926abc1bd26d976c800c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d83cb82d60d56781ea001d4f6467f9b233d7ce3d45438bb570a0e33e3387c9d1\",\"dweb:/ipfs/Qmdm9Lqe7QcUv8BLUgn5mTdCaCAB8wzzuDUs5j3rwhoZkg\"]},\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IMarketPlace.sol\":{\"keccak256\":\"0x5d9e7e2daf4c66f12dbed0bd4b51a78ebc3863a8b1e93fc502556c8aa1214d54\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://2adaa72d7042a6d167301c51ad29ae839bedb010901b80a67a3b6a1f94662316\",\"dweb:/ipfs/QmdKS96vLrB1JyPRnY41Q8vc7VRxLXRLMAVeiuJNaXc6Gx\"]},\"@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol\":{\"keccak256\":\"0xfbb3ca7272af58dc245a20e91a1f68481ee04706fa3fe46d184000efc21f4bad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://038cad5fc2950820d94eead6323b56c3b95442aaa91a62c648fbde3256208ef5\",\"dweb:/ipfs/QmUkfnMmgc5gt6Dj99TkYEwUuRcPqBpm4qnxb71mqj6Qep\"]},\"@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol\":{\"keccak256\":\"0x1c4860acd323e34a67b3e97faab9aaa55fe8e92b1dcf08b5f47f3468d58ce75c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3c2746f8ebb4bfb6b8e8a768296c7f85f11b36f4873daabb91933c3602f00590\",\"dweb:/ipfs/QmdumDez8WEdk9FDuP7Jp5pDSJiQeFtFSJw3B5CEHJL4KU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\nimport \"./IGameNFT.sol\";\n\ninterface IMarketPlace {\n  enum OrderType {\n    trading,\n    renting\n  }\n  enum OrderKind {\n    hero,\n    item,\n    land\n  }\n  enum PaymentType {\n    fota,\n    usd,\n    all\n  }\n  enum PaymentCurrency {\n    fota,\n    busd,\n    usdt\n  }\n  function fotaToken() external view returns (address);\n  function busdToken() external view returns (address);\n  function usdtToken() external view returns (address);\n  function citizen() external view returns (address);\n  function takeOrder(OrderKind _kind, uint _tokenId, PaymentCurrency _paymentCurrency) external;\n  function paymentType() external view returns (PaymentType);\n}\n",
+  "sourcePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IMarketPlace.sol",
+  "ast": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IMarketPlace.sol",
+    "exportedSymbols": {
+      "IERC165Upgradeable": [
+        21121
+      ],
+      "IERC721Upgradeable": [
+        20028
+      ],
+      "IGameNFT": [
+        9482
+      ],
+      "IMarketPlace": [
+        9566
+      ]
+    },
+    "id": 9567,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9512,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:27"
+      },
+      {
+        "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IGameNFT.sol",
+        "file": "./IGameNFT.sol",
+        "id": 9513,
+        "nodeType": "ImportDirective",
+        "scope": 9567,
+        "sourceUnit": 9483,
+        "src": "57:24:27",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9566,
+        "linearizedBaseContracts": [
+          9566
+        ],
+        "name": "IMarketPlace",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IMarketPlace.OrderType",
+            "id": 9516,
+            "members": [
+              {
+                "id": 9514,
+                "name": "trading",
+                "nodeType": "EnumValue",
+                "src": "131:7:27"
+              },
+              {
+                "id": 9515,
+                "name": "renting",
+                "nodeType": "EnumValue",
+                "src": "144:7:27"
+              }
+            ],
+            "name": "OrderType",
+            "nodeType": "EnumDefinition",
+            "src": "110:45:27"
+          },
+          {
+            "canonicalName": "IMarketPlace.OrderKind",
+            "id": 9520,
+            "members": [
+              {
+                "id": 9517,
+                "name": "hero",
+                "nodeType": "EnumValue",
+                "src": "179:4:27"
+              },
+              {
+                "id": 9518,
+                "name": "item",
+                "nodeType": "EnumValue",
+                "src": "189:4:27"
+              },
+              {
+                "id": 9519,
+                "name": "land",
+                "nodeType": "EnumValue",
+                "src": "199:4:27"
+              }
+            ],
+            "name": "OrderKind",
+            "nodeType": "EnumDefinition",
+            "src": "158:49:27"
+          },
+          {
+            "canonicalName": "IMarketPlace.PaymentType",
+            "id": 9524,
+            "members": [
+              {
+                "id": 9521,
+                "name": "fota",
+                "nodeType": "EnumValue",
+                "src": "233:4:27"
+              },
+              {
+                "id": 9522,
+                "name": "usd",
+                "nodeType": "EnumValue",
+                "src": "243:3:27"
+              },
+              {
+                "id": 9523,
+                "name": "all",
+                "nodeType": "EnumValue",
+                "src": "252:3:27"
+              }
+            ],
+            "name": "PaymentType",
+            "nodeType": "EnumDefinition",
+            "src": "210:49:27"
+          },
+          {
+            "canonicalName": "IMarketPlace.PaymentCurrency",
+            "id": 9528,
+            "members": [
+              {
+                "id": 9525,
+                "name": "fota",
+                "nodeType": "EnumValue",
+                "src": "289:4:27"
+              },
+              {
+                "id": 9526,
+                "name": "busd",
+                "nodeType": "EnumValue",
+                "src": "299:4:27"
+              },
+              {
+                "id": 9527,
+                "name": "usdt",
+                "nodeType": "EnumValue",
+                "src": "309:4:27"
+              }
+            ],
+            "name": "PaymentCurrency",
+            "nodeType": "EnumDefinition",
+            "src": "262:55:27"
+          },
+          {
+            "functionSelector": "48d002f2",
+            "id": 9533,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fotaToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9529,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:2:27"
+            },
+            "returnParameters": {
+              "id": 9532,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9531,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9533,
+                  "src": "364:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9530,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "364:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "363:9:27"
+            },
+            "scope": 9566,
+            "src": "320:53:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "de0e7014",
+            "id": 9538,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "busdToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9534,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "394:2:27"
+            },
+            "returnParameters": {
+              "id": 9537,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9536,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9538,
+                  "src": "420:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9535,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "420:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "419:9:27"
+            },
+            "scope": 9566,
+            "src": "376:53:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a98ad46c",
+            "id": 9543,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "usdtToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "450:2:27"
+            },
+            "returnParameters": {
+              "id": 9542,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9541,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9543,
+                  "src": "476:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9540,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "475:9:27"
+            },
+            "scope": 9566,
+            "src": "432:53:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2bbc4971",
+            "id": 9548,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "citizen",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9544,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:2:27"
+            },
+            "returnParameters": {
+              "id": 9547,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9546,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9548,
+                  "src": "530:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9545,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "530:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "529:9:27"
+            },
+            "scope": 9566,
+            "src": "488:51:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "db37dc27",
+            "id": 9559,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "takeOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9557,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9551,
+                  "mutability": "mutable",
+                  "name": "_kind",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9559,
+                  "src": "561:15:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_OrderKind_$9520",
+                    "typeString": "enum IMarketPlace.OrderKind"
+                  },
+                  "typeName": {
+                    "id": 9550,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 9549,
+                      "name": "OrderKind",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 9520,
+                      "src": "561:9:27"
+                    },
+                    "referencedDeclaration": 9520,
+                    "src": "561:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_OrderKind_$9520",
+                      "typeString": "enum IMarketPlace.OrderKind"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9553,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9559,
+                  "src": "578:13:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9552,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9556,
+                  "mutability": "mutable",
+                  "name": "_paymentCurrency",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9559,
+                  "src": "593:32:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentCurrency_$9528",
+                    "typeString": "enum IMarketPlace.PaymentCurrency"
+                  },
+                  "typeName": {
+                    "id": 9555,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 9554,
+                      "name": "PaymentCurrency",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 9528,
+                      "src": "593:15:27"
+                    },
+                    "referencedDeclaration": 9528,
+                    "src": "593:15:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PaymentCurrency_$9528",
+                      "typeString": "enum IMarketPlace.PaymentCurrency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "560:66:27"
+            },
+            "returnParameters": {
+              "id": 9558,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "635:0:27"
+            },
+            "scope": 9566,
+            "src": "542:94:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2763b8da",
+            "id": 9565,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "paymentType",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9560,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "659:2:27"
+            },
+            "returnParameters": {
+              "id": 9564,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9563,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9565,
+                  "src": "685:11:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentType_$9524",
+                    "typeString": "enum IMarketPlace.PaymentType"
+                  },
+                  "typeName": {
+                    "id": 9562,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 9561,
+                      "name": "PaymentType",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 9524,
+                      "src": "685:11:27"
+                    },
+                    "referencedDeclaration": 9524,
+                    "src": "685:11:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PaymentType_$9524",
+                      "typeString": "enum IMarketPlace.PaymentType"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "684:13:27"
+            },
+            "scope": 9566,
+            "src": "639:59:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9567,
+        "src": "83:617:27"
+      }
+    ],
+    "src": "33:668:27"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IMarketPlace.sol",
+    "exportedSymbols": {
+      "IERC165Upgradeable": [
+        21121
+      ],
+      "IERC721Upgradeable": [
+        20028
+      ],
+      "IGameNFT": [
+        9482
+      ],
+      "IMarketPlace": [
+        9566
+      ]
+    },
+    "id": 9567,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9512,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:27"
+      },
+      {
+        "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IGameNFT.sol",
+        "file": "./IGameNFT.sol",
+        "id": 9513,
+        "nodeType": "ImportDirective",
+        "scope": 9567,
+        "sourceUnit": 9483,
+        "src": "57:24:27",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9566,
+        "linearizedBaseContracts": [
+          9566
+        ],
+        "name": "IMarketPlace",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IMarketPlace.OrderType",
+            "id": 9516,
+            "members": [
+              {
+                "id": 9514,
+                "name": "trading",
+                "nodeType": "EnumValue",
+                "src": "131:7:27"
+              },
+              {
+                "id": 9515,
+                "name": "renting",
+                "nodeType": "EnumValue",
+                "src": "144:7:27"
+              }
+            ],
+            "name": "OrderType",
+            "nodeType": "EnumDefinition",
+            "src": "110:45:27"
+          },
+          {
+            "canonicalName": "IMarketPlace.OrderKind",
+            "id": 9520,
+            "members": [
+              {
+                "id": 9517,
+                "name": "hero",
+                "nodeType": "EnumValue",
+                "src": "179:4:27"
+              },
+              {
+                "id": 9518,
+                "name": "item",
+                "nodeType": "EnumValue",
+                "src": "189:4:27"
+              },
+              {
+                "id": 9519,
+                "name": "land",
+                "nodeType": "EnumValue",
+                "src": "199:4:27"
+              }
+            ],
+            "name": "OrderKind",
+            "nodeType": "EnumDefinition",
+            "src": "158:49:27"
+          },
+          {
+            "canonicalName": "IMarketPlace.PaymentType",
+            "id": 9524,
+            "members": [
+              {
+                "id": 9521,
+                "name": "fota",
+                "nodeType": "EnumValue",
+                "src": "233:4:27"
+              },
+              {
+                "id": 9522,
+                "name": "usd",
+                "nodeType": "EnumValue",
+                "src": "243:3:27"
+              },
+              {
+                "id": 9523,
+                "name": "all",
+                "nodeType": "EnumValue",
+                "src": "252:3:27"
+              }
+            ],
+            "name": "PaymentType",
+            "nodeType": "EnumDefinition",
+            "src": "210:49:27"
+          },
+          {
+            "canonicalName": "IMarketPlace.PaymentCurrency",
+            "id": 9528,
+            "members": [
+              {
+                "id": 9525,
+                "name": "fota",
+                "nodeType": "EnumValue",
+                "src": "289:4:27"
+              },
+              {
+                "id": 9526,
+                "name": "busd",
+                "nodeType": "EnumValue",
+                "src": "299:4:27"
+              },
+              {
+                "id": 9527,
+                "name": "usdt",
+                "nodeType": "EnumValue",
+                "src": "309:4:27"
+              }
+            ],
+            "name": "PaymentCurrency",
+            "nodeType": "EnumDefinition",
+            "src": "262:55:27"
+          },
+          {
+            "functionSelector": "48d002f2",
+            "id": 9533,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fotaToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9529,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:2:27"
+            },
+            "returnParameters": {
+              "id": 9532,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9531,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9533,
+                  "src": "364:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9530,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "364:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "363:9:27"
+            },
+            "scope": 9566,
+            "src": "320:53:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "de0e7014",
+            "id": 9538,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "busdToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9534,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "394:2:27"
+            },
+            "returnParameters": {
+              "id": 9537,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9536,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9538,
+                  "src": "420:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9535,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "420:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "419:9:27"
+            },
+            "scope": 9566,
+            "src": "376:53:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "a98ad46c",
+            "id": 9543,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "usdtToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "450:2:27"
+            },
+            "returnParameters": {
+              "id": 9542,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9541,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9543,
+                  "src": "476:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9540,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "475:9:27"
+            },
+            "scope": 9566,
+            "src": "432:53:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2bbc4971",
+            "id": 9548,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "citizen",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9544,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:2:27"
+            },
+            "returnParameters": {
+              "id": 9547,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9546,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9548,
+                  "src": "530:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9545,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "530:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "529:9:27"
+            },
+            "scope": 9566,
+            "src": "488:51:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "db37dc27",
+            "id": 9559,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "takeOrder",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9557,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9551,
+                  "mutability": "mutable",
+                  "name": "_kind",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9559,
+                  "src": "561:15:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_OrderKind_$9520",
+                    "typeString": "enum IMarketPlace.OrderKind"
+                  },
+                  "typeName": {
+                    "id": 9550,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 9549,
+                      "name": "OrderKind",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 9520,
+                      "src": "561:9:27"
+                    },
+                    "referencedDeclaration": 9520,
+                    "src": "561:9:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_OrderKind_$9520",
+                      "typeString": "enum IMarketPlace.OrderKind"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9553,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9559,
+                  "src": "578:13:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9552,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:4:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9556,
+                  "mutability": "mutable",
+                  "name": "_paymentCurrency",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9559,
+                  "src": "593:32:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentCurrency_$9528",
+                    "typeString": "enum IMarketPlace.PaymentCurrency"
+                  },
+                  "typeName": {
+                    "id": 9555,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 9554,
+                      "name": "PaymentCurrency",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 9528,
+                      "src": "593:15:27"
+                    },
+                    "referencedDeclaration": 9528,
+                    "src": "593:15:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PaymentCurrency_$9528",
+                      "typeString": "enum IMarketPlace.PaymentCurrency"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "560:66:27"
+            },
+            "returnParameters": {
+              "id": 9558,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "635:0:27"
+            },
+            "scope": 9566,
+            "src": "542:94:27",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2763b8da",
+            "id": 9565,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "paymentType",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9560,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "659:2:27"
+            },
+            "returnParameters": {
+              "id": 9564,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9563,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9565,
+                  "src": "685:11:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PaymentType_$9524",
+                    "typeString": "enum IMarketPlace.PaymentType"
+                  },
+                  "typeName": {
+                    "id": 9562,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 9561,
+                      "name": "PaymentType",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 9524,
+                      "src": "685:11:27"
+                    },
+                    "referencedDeclaration": 9524,
+                    "src": "685:11:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PaymentType_$9524",
+                      "typeString": "enum IMarketPlace.PaymentType"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "684:13:27"
+            },
+            "scope": 9566,
+            "src": "639:59:27",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9567,
+        "src": "83:617:27"
+      }
+    ],
+    "src": "33:668:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-01-05T05:27:46.077Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

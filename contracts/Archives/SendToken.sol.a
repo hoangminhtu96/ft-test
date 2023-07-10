@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: GPL
+
+pragma solidity 0.8.0;
+
+import "./libs/zeppelin/token/BEP20/IBEP20.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+
+contract SendToken is Initializable {
+  address public mainAdmin;
+
+  function initialize(address _mainAdmin) virtual public initializer {
+    mainAdmin = _mainAdmin;
+  }
+
+  function _isMainAdmin() public view returns (bool) {
+    return msg.sender == mainAdmin;
+  }
+
+  modifier onlyMainAdmin() {
+    require(_isMainAdmin(), "onlyMainAdmin");
+    _;
+  }
+
+  function send(address tokenAddress, address[] calldata _addresses, uint[] calldata amount) onlyMainAdmin public {
+    IBEP20 token = IBEP20(tokenAddress);
+    for (uint i = 0; i < _addresses.length; i++) {
+      token.transfer(_addresses[i], amount[i]);
+    }
+  }
+}
+
+

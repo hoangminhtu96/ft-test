@@ -1,0 +1,7 @@
+accounts = await web3.eth.getAccounts()
+pve = await FOTAGamePVE.deployed()
+
+mission = 1
+heroIds = [1, 2, 3]
+signature = "0xefc8815ec59453a48dd3dbd3b3b2c5c4f4ee19c6b4801d8f9fcd75fa64f4505a520ad0dc24f89f37cb041680194eb6a4c436ce71d273351d8bcf3144e1300c631b"
+pve.validateSignature(mission, heroIds, signature, { from: accounts[1] })

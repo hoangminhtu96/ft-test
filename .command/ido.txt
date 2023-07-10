@@ -1,0 +1,4 @@
+app = await IDO.deployed()
+
+await app.setRootHash('0x551ae89aa05af90d59e36ff8000c88c5fe0a0dda3dfcdad433b7a71d7ac7422c')
+app.verifyCode('0x3c3517f1a09a393A49EC889214A589A15d762B38', ['0x967da3e633b978c5b5badad964ef74d4886c9c014afdc4c93cc976d53a1649c2','0x53846dcda39bd5c670e74e97a3ad8fb6117f4ddc95b4e9cd2721904ebddde557'])

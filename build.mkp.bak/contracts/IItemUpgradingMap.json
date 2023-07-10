@@ -1,0 +1,425 @@
+{
+  "contractName": "IItemUpgradingMap",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "_itemClass",
+          "type": "uint16"
+        }
+      ],
+      "name": "getItem",
+      "outputs": [
+        {
+          "internalType": "uint16[]",
+          "name": "",
+          "type": "uint16[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"_itemClass\",\"type\":\"uint16\"}],\"name\":\"getItem\",\"outputs\":[{\"internalType\":\"uint16[]\",\"name\":\"\",\"type\":\"uint16[]\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IItemUpgradingMap.sol\":\"IItemUpgradingMap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IItemUpgradingMap.sol\":{\"keccak256\":\"0x1a5903bec91a8a9406d7c09427bcdded4874ad4042fa538d2c928fd43626f8dd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://778c6f14445f6af7f017dc66e39164298e8f526a1e3200cfb63561362448fe77\",\"dweb:/ipfs/QmXXvyi1Pj2dHYYVjzm1fHEc6Vks9nFKY5rFCBycZY22BV\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\n\ninterface IItemUpgradingMap {\n  function getItem(uint16 _itemClass) external view returns (uint16[] memory, uint, uint8);\n}\n",
+  "sourcePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IItemUpgradingMap.sol",
+  "ast": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IItemUpgradingMap.sol",
+    "exportedSymbols": {
+      "IItemUpgradingMap": [
+        9497
+      ]
+    },
+    "id": 9498,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9484,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9497,
+        "linearizedBaseContracts": [
+          9497
+        ],
+        "name": "IItemUpgradingMap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "810de9de",
+            "id": 9496,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getItem",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9487,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9486,
+                  "mutability": "mutable",
+                  "name": "_itemClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "106:17:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 9485,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:6:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:19:25"
+            },
+            "returnParameters": {
+              "id": 9495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9490,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "148:15:25",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint16_$dyn_memory_ptr",
+                    "typeString": "uint16[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 9488,
+                      "name": "uint16",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "148:6:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "id": 9489,
+                    "nodeType": "ArrayTypeName",
+                    "src": "148:8:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint16_$dyn_storage_ptr",
+                      "typeString": "uint16[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9492,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "165:4:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9491,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "165:4:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9494,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "171:5:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 9493,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "171:5:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:30:25"
+            },
+            "scope": 9497,
+            "src": "89:89:25",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9498,
+        "src": "57:123:25"
+      }
+    ],
+    "src": "33:148:25"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IItemUpgradingMap.sol",
+    "exportedSymbols": {
+      "IItemUpgradingMap": [
+        9497
+      ]
+    },
+    "id": 9498,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9484,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9497,
+        "linearizedBaseContracts": [
+          9497
+        ],
+        "name": "IItemUpgradingMap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "810de9de",
+            "id": 9496,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getItem",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9487,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9486,
+                  "mutability": "mutable",
+                  "name": "_itemClass",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "106:17:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 9485,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:6:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:19:25"
+            },
+            "returnParameters": {
+              "id": 9495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9490,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "148:15:25",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint16_$dyn_memory_ptr",
+                    "typeString": "uint16[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 9488,
+                      "name": "uint16",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "148:6:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint16",
+                        "typeString": "uint16"
+                      }
+                    },
+                    "id": 9489,
+                    "nodeType": "ArrayTypeName",
+                    "src": "148:8:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint16_$dyn_storage_ptr",
+                      "typeString": "uint16[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9492,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "165:4:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9491,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "165:4:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9494,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9496,
+                  "src": "171:5:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 9493,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "171:5:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:30:25"
+            },
+            "scope": 9497,
+            "src": "89:89:25",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9498,
+        "src": "57:123:25"
+      }
+    ],
+    "src": "33:148:25"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-01-05T05:27:46.076Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

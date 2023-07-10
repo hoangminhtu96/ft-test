@@ -1,0 +1,354 @@
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x969b6915443788a62e1cfc0c0b3d63e89aebd4b7d1b72e08b84aac812b21b1de
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x224028b4f6D55e1d5368C41f8354329C826e66dF
+   > block number:        14093222
+   > block timestamp:     1641366583
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.640506677018267253
+   > gas used:            178474 (0x2b92a)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00356948 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00356948 ETH
+
+
+2_deploy_tokens_migration.js
+============================
+
+   Deploying 'Citizen'
+   -------------------
+   > transaction hash:    0xa155afd1de5e5c1e553a327d7c335d706332d097a342c51bc895fe8dd5a24978
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x5C7308Bb5748D8ba691328eAa382251F107B038C
+   > block number:        14093229
+   > block timestamp:     1641366604
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.620266257018267253
+   > gas used:            969743 (0xecc0f)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01939486 ETH
+
+
+      Deploying 'TransparentUpgradeableProxy'
+      ---------------------------------------
+      > transaction hash:    0xd4ccbbb973107fd3e7bdc9a7e3124f8a1c95f9f89a04dcfe0d42bba3cd9d769d
+      > Blocks: 3            Seconds: 8
+      > contract address:    0x9BF44953A71bbF63455D7C8a8dcc920ADD608caE
+      > block number:        14093292
+      > block timestamp:     1641366793
+      > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+      > balance:             1.210912537018267253
+      > gas used:            642565 (0x9ce05)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.0128513 ETH
+
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > transaction hash:    0x87c11d5aa3fbb3b5edbabfb19c190809b9d693542ae2e7f0fa277a9c2312f5bb
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x637D29ED4E10349FE8BBcAa09eDa31D09254ed35
+   > block number:        14093232
+   > block timestamp:     1641366613
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.610611857018267253
+   > gas used:            482720 (0x75da0)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0096544 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0x94215901b529b47a5a814415b87512fa035a19095647a3252620c056ef03a083
+   > Blocks: 3            Seconds: 8
+   > contract address:    0x27ceB65C350165905530D210a629bEBE80b5439c
+   > block number:        14093235
+   > block timestamp:     1641366622
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.597760557018267253
+   > gas used:            642565 (0x9ce05)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0128513 ETH
+
+
+   Deploying 'HeroNFT'
+   -------------------
+   > transaction hash:    0x7e21d5b8b276c20e168e9a207986c593124315dda689ba2461b99c440c615be0
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x11a054023A8753106a5a8081Fd325930d3d57013
+   > block number:        14093238
+   > block timestamp:     1641366631
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.495868777018267253
+   > gas used:            5094589 (0x4dbcbd)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.10189178 ETH
+
+
+      Deploying 'TransparentUpgradeableProxy'
+      ---------------------------------------
+      > transaction hash:    0x5b47654bd88e67c5482951a34c041ece44be5c5ba5e52c0595c81eff4b301239
+      > Blocks: 1            Seconds: 4
+      > contract address:    0x9F007C4Ef2fCFaacA5f135680Df4b596195ed61d
+      > block number:        14093295
+      > block timestamp:     1641366802
+      > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+      > balance:             1.157196077018267253
+      > gas used:            2685823 (0x28fb7f)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.05371646 ETH
+
+
+   Deploying 'ItemNFT'
+   -------------------
+   > transaction hash:    0x4ba04f823f204e379be52248811a3bfcac6f235831bb2d7d81166c1e187a052d
+   > Blocks: 1            Seconds: 4
+   > contract address:    0xb929dC7A6a737562dC3BbE876Df00a0d8510AF32
+   > block number:        14093244
+   > block timestamp:     1641366649
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.377543677018267253
+   > gas used:            3230432 (0x314ae0)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06460864 ETH
+
+
+       Deploying 'TransparentUpgradeableProxy'
+       ---------------------------------------
+       > transaction hash:    0x5432caca48b976168fef53709eef21939d62eea947735357aa798a5f62b21270
+       > Blocks: 1            Seconds: 4
+       > contract address:    0xE13d87393259dEdB9d88C78b6B59A9E900b7f00D
+       > block number:        14093298
+       > block timestamp:     1641366811
+       > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+       > balance:             1.113735357018267253
+       > gas used:            2173036 (0x21286c)
+       > gas price:           20 gwei
+       > value sent:          0 ETH
+       > total cost:          0.04346072 ETH
+
+
+   Deploying 'Treasury'
+   --------------------
+   > transaction hash:    0x4896f627f65ca9341996002fddd6753387a0893efb89fb7b5b9d47cdd7bea606
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x003214e2b344a98cf289A43DacE7E6332A606ACa
+   > block number:        14093250
+   > block timestamp:     1641366667
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.310727637018267253
+   > gas used:            1167766 (0x11d196)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02335532 ETH
+
+
+      Deploying 'TransparentUpgradeableProxy'
+      ---------------------------------------
+      > transaction hash:    0xce6dc67940346a92387731d9e1295bdd644035ee0bba2e2eaca4975a57f56b6b
+      > Blocks: 1            Seconds: 4
+      > contract address:    0xB80bD89be16caAc51489904F44cD2458d0F61E92
+      > block number:        14093301
+      > block timestamp:     1641366820
+      > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+      > balance:             1.098744417018267253
+      > gas used:            749547 (0xb6feb)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01499094 ETH
+
+
+   Deploying 'FOTAGamePVE'
+   -----------------------
+   > transaction hash:    0x7dd20065bd9e854e76217a2b00d26761ce2a53abeb3a4635df9ab40d6d444f66
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x9961f8F42583bb552338461186FB26e8a1edF9Bb
+   > block number:        14093256
+   > block timestamp:     1641366685
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.285313177018267253
+   > gas used:            521152 (0x7f3c0)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01042304 ETH
+
+
+      Deploying 'TransparentUpgradeableProxy'
+      ---------------------------------------
+      > transaction hash:    0xa5b643e477f67a1bcd570ff84412e5e955d15df3603b881596625b7fec50c03b
+      > Blocks: 1            Seconds: 4
+      > contract address:    0x73d012b4534Cc61E13e291555A1E7Fd171b5CB65
+      > block number:        14093304
+      > block timestamp:     1641366829
+      > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+      > balance:             1.085928277018267253
+      > gas used:            640807 (0x9c727)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01281614 ETH
+
+
+   Deploying 'FOTAPricer'
+   ----------------------
+   > transaction hash:    0x38495be4c223bf243b70ab78bb26388002e608df3b1e201d0c7a9fc22e8e3d8f
+   > Blocks: 2            Seconds: 4
+   > contract address:    0xEEB60F595f486b9f30632d78B2102eBCeDD8B8Ba
+   > block number:        14093262
+   > block timestamp:     1641366703
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.256874637018267253
+   > gas used:            781120 (0xbeb40)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0156224 ETH
+
+
+      Deploying 'TransparentUpgradeableProxy'
+      ---------------------------------------
+      > transaction hash:    0x31a5a7b8418ccc428156b651d7e8d1af5f059d3bd44072909306de6aa07c544d
+      > Blocks: 1            Seconds: 4
+      > contract address:    0x0813259bb72e5737031b27c8e8BF3EA4c07bdEC4
+      > block number:        14093307
+      > block timestamp:     1641366838
+      > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+      > balance:             1.069723357018267253
+      > gas used:            810246 (0xc5d06)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01620492 ETH
+
+
+
+   Deploying 'EatherTransporter'
+   -----------------------------
+   > transaction hash:    0x273f8ecf4068fdcc1513eecf1ed796c30df52c6ccbf8072a1ca98d38c344d787
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x21593366ec57B54A24Cb24CFcff8F5fF013eBB30
+   > block number:        14093310
+   > block timestamp:     1641366847
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.057232517018267253
+   > gas used:            624542 (0x9879e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01249084 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0xe3b048208bf09913808b391d8be6d85f31fcbce3bdd73cfc3143271fecc044d7
+   > Blocks: 2            Seconds: 8
+   > contract address:    0x713E01d55E461c73d3f00250D2c04B6cA9d2AE6E
+   > block number:        14093313
+   > block timestamp:     1641366856
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             1.043952357018267253
+   > gas used:            664008 (0xa21c8)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01328016 ETH
+
+
+   Deploying 'MarketPlace'
+   -----------------------
+   > transaction hash:    0xaa780be1ba15164760b3df144d99ede913206acc50edfc0c6d1db392d023418e
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x7eE38B8F7c0372A24c0450C67eda703eEd70284C
+   > block number:        14093317
+   > block timestamp:     1641366868
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             0.941837677018267253
+   > gas used:            5105734 (0x4de846)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.10211468 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0xe1d4cc7a16005189a67bfe106b8db3c475484ce80a78e0a109b1cea1a3db9ca4
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x57573e2239C0A9E67E74D8AC8EA590E8FD99fA63
+   > block number:        14093320
+   > block timestamp:     1641366877
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             0.924706277018267253
+   > gas used:            856570 (0xd11fa)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0171314 ETH
+
+Set hero pirce: 1
+Set hero pirce: 2
+Set hero pirce: 3
+Set hero pirce: 4
+Set hero pirce: 5
+Set hero pirce: 6
+Set hero pirce: 7
+Set hero pirce: 8
+Set hero pirce: 9
+Set hero pirce: 10
+Set hero pirce: 11
+Set hero pirce: 12
+Set hero pirce: 13
+Set hero pirce: 14
+Set hero pirce: 15
+Set hero pirce: 16
+Set hero pirce: 17
+Set hero pirce: 18
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.29905756 ETH
+
+   Deploying 'EatherSale'
+   ----------------------
+   > transaction hash:    0xf498c176b040eae774c1b95498b00ab46e22e08d750be489c7545b5be4892ea1
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x4dd8b82f3D9f196781726d5aA67eE7d39C0390b2
+   > block number:        14093764
+   > block timestamp:     1641368209
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             0.843279397018267253
+   > gas used:            1906246 (0x1d1646)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03812492 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0x6d0bda4d113ad17ae706037e3774500d31f82f8edb8124d57f9428032e32b918
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x636c9F1d45975d76d212721be4f9b89ad259194a
+   > block number:        14093767
+   > block timestamp:     1641368218
+   > account:             0x5f3A863D81Ea0f46B8160d3E6a7210B81a98a7fa
+   > balance:             0.825284277018267253
+   > gas used:            899756 (0xdbaac)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01799512 ETH
+   
+Summary
+=======
+> Total deployments:   11
+> Final cost:          0.30262704 ETH

@@ -1,0 +1,352 @@
+{
+  "contractName": "IGameMiningPool",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_gamerAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "releaseGameAllocation",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_gamerAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"releaseGameAllocation\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IGameMiningPool.sol\":\"IGameMiningPool\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IGameMiningPool.sol\":{\"keccak256\":\"0xb3c38edf75bd1fb57c9489b82321eafc535cadc36a6e778cd4629d04e3727abe\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://e60676c584c4a1567fa0daab0d55261ca617095f2699ecee4d3b39fccf7226ac\",\"dweb:/ipfs/QmRxqSDJPDwCNQXRUu4sW15q1JyetEKUEnodLkRgQMsesP\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\ninterface IGameMiningPool {\n  function releaseGameAllocation(address _gamerAddress, uint _amount) external returns (bool);\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IGameMiningPool.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IGameMiningPool.sol",
+    "exportedSymbols": {
+      "IGameMiningPool": [
+        10499
+      ]
+    },
+    "id": 10500,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10489,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10499,
+        "linearizedBaseContracts": [
+          10499
+        ],
+        "name": "IGameMiningPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6757a2ba",
+            "id": 10498,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "releaseGameAllocation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10491,
+                  "mutability": "mutable",
+                  "name": "_gamerAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10498,
+                  "src": "118:21:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10490,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "118:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10493,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10498,
+                  "src": "141:12:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10492,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:4:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "117:37:25"
+            },
+            "returnParameters": {
+              "id": 10497,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10496,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10498,
+                  "src": "173:4:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10495,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "173:4:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "172:6:25"
+            },
+            "scope": 10499,
+            "src": "87:92:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10500,
+        "src": "57:124:25"
+      }
+    ],
+    "src": "33:149:25"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IGameMiningPool.sol",
+    "exportedSymbols": {
+      "IGameMiningPool": [
+        10499
+      ]
+    },
+    "id": 10500,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10489,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:25"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10499,
+        "linearizedBaseContracts": [
+          10499
+        ],
+        "name": "IGameMiningPool",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6757a2ba",
+            "id": 10498,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "releaseGameAllocation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10491,
+                  "mutability": "mutable",
+                  "name": "_gamerAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10498,
+                  "src": "118:21:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10490,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "118:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10493,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10498,
+                  "src": "141:12:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10492,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:4:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "117:37:25"
+            },
+            "returnParameters": {
+              "id": 10497,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10496,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10498,
+                  "src": "173:4:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10495,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "173:4:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "172:6:25"
+            },
+            "scope": 10499,
+            "src": "87:92:25",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10500,
+        "src": "57:124:25"
+      }
+    ],
+    "src": "33:149:25"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:51:26.512Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

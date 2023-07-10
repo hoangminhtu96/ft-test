@@ -1,0 +1,349 @@
+{
+  "contractName": "IEnergyManager",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_consumeAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateEnergy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_consumeAmount\",\"type\":\"uint256\"}],\"name\":\"updateEnergy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEnergyManager.sol\":\"IEnergyManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEnergyManager.sol\":{\"keccak256\":\"0x94d330e7fa6467d607d2b0f08375d12a448bfd4fb93b829dff7d20039ca124f7\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://e918e1a907dff8d23691d34b3fbe1f87f052191f4b5211d8e8d449897025596e\",\"dweb:/ipfs/QmfH66zhD3i66ra54buy1HexzA9uJuy4oknPSTGtE5tACL\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\ninterface IEnergyManager {\n  function updateEnergy(address _user, uint _amount, uint _consumeAmount) external;\n}\n",
+  "sourcePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEnergyManager.sol",
+  "ast": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEnergyManager.sol",
+    "exportedSymbols": {
+      "IEnergyManager": [
+        9261
+      ]
+    },
+    "id": 9262,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9251,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:19"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9261,
+        "linearizedBaseContracts": [
+          9261
+        ],
+        "name": "IEnergyManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "68de1c47",
+            "id": 9260,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateEnergy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9258,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9253,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9260,
+                  "src": "108:13:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9252,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9255,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9260,
+                  "src": "123:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9254,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9257,
+                  "mutability": "mutable",
+                  "name": "_consumeAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9260,
+                  "src": "137:19:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9256,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "137:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:50:19"
+            },
+            "returnParameters": {
+              "id": 9259,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "166:0:19"
+            },
+            "scope": 9261,
+            "src": "86:81:19",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9262,
+        "src": "57:112:19"
+      }
+    ],
+    "src": "33:137:19"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/binh/Documents/Development/Solidity/fota-dapp/contracts/interfaces/IEnergyManager.sol",
+    "exportedSymbols": {
+      "IEnergyManager": [
+        9261
+      ]
+    },
+    "id": 9262,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9251,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:19"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 9261,
+        "linearizedBaseContracts": [
+          9261
+        ],
+        "name": "IEnergyManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "68de1c47",
+            "id": 9260,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateEnergy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9258,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9253,
+                  "mutability": "mutable",
+                  "name": "_user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9260,
+                  "src": "108:13:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 9252,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:7:19",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9255,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9260,
+                  "src": "123:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9254,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 9257,
+                  "mutability": "mutable",
+                  "name": "_consumeAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9260,
+                  "src": "137:19:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9256,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "137:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:50:19"
+            },
+            "returnParameters": {
+              "id": 9259,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "166:0:19"
+            },
+            "scope": 9261,
+            "src": "86:81:19",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 9262,
+        "src": "57:112:19"
+      }
+    ],
+    "src": "33:137:19"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-01-05T05:27:46.072Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

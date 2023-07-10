@@ -1,0 +1,23 @@
+accounts = await web3.eth.getAccounts()
+app = await FOTAFarm.deployed()
+fota = await FOTAToken.deployed()
+value1BN = web3.utils.toWei('1')
+value100BN = web3.utils.toWei('100')
+value1MilBN = web3.utils.toWei('1000000')
+
+moment = require('moment')
+app.start(new Date(moment().startOf('m').subtract(20, 'h')).getTime() / 1000)
+fota.releaseIDOAllocation(accounts[0])
+fota.approve(app.address, value1MilBN)
+fota.releaseIDOAllocation(accounts[2])
+fota.approve(app.address, value1MilBN, { from: accounts[2] })
+
+app.fundFOTA(value100BN)
+
+app.depositFOTA(value100BN, { from: accounts[2] })
+result = await app.checkin({ from: accounts[2] })
+app.withdraw({ from: accounts[2] })
+result = await app.claim({ from: accounts[2] })
+
+dayPassed = await app.getDaysPassed()
+result = await app.dailyTotalPoint(dayPassed)

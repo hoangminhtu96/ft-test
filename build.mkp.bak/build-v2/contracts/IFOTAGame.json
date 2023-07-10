@@ -1,0 +1,295 @@
+{
+  "contractName": "IFOTAGame",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_inviter",
+          "type": "address"
+        }
+      ],
+      "name": "validateInviter",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_inviter\",\"type\":\"address\"}],\"name\":\"validateInviter\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAGame.sol\":\"IFOTAGame\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAGame.sol\":{\"keccak256\":\"0x463fd16cd0f565109d2d5cbdfbed0867e87531082139e982b1e588d86ca14d99\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://b1bbd7857cc0b5d99962031d6edf66d37ba8823c2882c7a42cb10cdf2e629ded\",\"dweb:/ipfs/QmPs2fAj84HCX6rqFDenWj1YhDskisUktJWamhffyz83j8\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\ninterface IFOTAGame {\n  function validateInviter(address _inviter) external view returns (bool);\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAGame.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAGame.sol",
+    "exportedSymbols": {
+      "IFOTAGame": [
+        10424
+      ]
+    },
+    "id": 10425,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10416,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:21"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10424,
+        "linearizedBaseContracts": [
+          10424
+        ],
+        "name": "IFOTAGame",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "307a22a2",
+            "id": 10423,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validateInviter",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10419,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10418,
+                  "mutability": "mutable",
+                  "name": "_inviter",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10423,
+                  "src": "106:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10417,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:18:21"
+            },
+            "returnParameters": {
+              "id": 10422,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10421,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10423,
+                  "src": "147:4:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10420,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:4:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:6:21"
+            },
+            "scope": 10424,
+            "src": "81:72:21",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10425,
+        "src": "57:98:21"
+      }
+    ],
+    "src": "33:123:21"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAGame.sol",
+    "exportedSymbols": {
+      "IFOTAGame": [
+        10424
+      ]
+    },
+    "id": 10425,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10416,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:21"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10424,
+        "linearizedBaseContracts": [
+          10424
+        ],
+        "name": "IFOTAGame",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "307a22a2",
+            "id": 10423,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validateInviter",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10419,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10418,
+                  "mutability": "mutable",
+                  "name": "_inviter",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10423,
+                  "src": "106:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10417,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "106:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "105:18:21"
+            },
+            "returnParameters": {
+              "id": 10422,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10421,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10423,
+                  "src": "147:4:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10420,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:4:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:6:21"
+            },
+            "scope": 10424,
+            "src": "81:72:21",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10425,
+        "src": "57:98:21"
+      }
+    ],
+    "src": "33:123:21"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:51:26.511Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

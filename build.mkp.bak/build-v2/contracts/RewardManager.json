@@ -1,0 +1,111 @@
+{
+  "contractName": "RewardManager",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/utils/RewardManager.sol\":\"RewardManager\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/utils/RewardManager.sol\":{\"keccak256\":\"0x83f19ba5f48647cc1cf3996b0239287429c34534ecea8623c3b6ae6c37325014\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://859a48fa32e3b5cf9eab3ff81880ba5a7c823154c70116a3d96ee2710ea333f5\",\"dweb:/ipfs/QmWLoz32Qwh5Nbhuq65ig6MkamZQCnqBc6JUtznhPGyvbg\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201009ecfecc110a56af28fd7478cd783791901989580113a80e3d3948c538f43a64736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212201009ecfecc110a56af28fd7478cd783791901989580113a80e3d3948c538f43a64736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "57:27:56:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:27:56:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\ncontract RewardManager {\n\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/utils/RewardManager.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/utils/RewardManager.sol",
+    "exportedSymbols": {
+      "RewardManager": [
+        22477
+      ]
+    },
+    "id": 22478,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 22476,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:56"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 22477,
+        "linearizedBaseContracts": [
+          22477
+        ],
+        "name": "RewardManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 22478,
+        "src": "57:27:56"
+      }
+    ],
+    "src": "33:52:56"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/utils/RewardManager.sol",
+    "exportedSymbols": {
+      "RewardManager": [
+        22477
+      ]
+    },
+    "id": 22478,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 22476,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:56"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 22477,
+        "linearizedBaseContracts": [
+          22477
+        ],
+        "name": "RewardManager",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 22478,
+        "src": "57:27:56"
+      }
+    ],
+    "src": "33:52:56"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:51:26.725Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "contractName": "IFOTAPricer",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "fotaPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"fotaPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAPricer.sol\":\"IFOTAPricer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAPricer.sol\":{\"keccak256\":\"0x476f20e861e95bafd10638bda946fdcd6460e46a9094a06ca8d9bd8bbcbd1424\",\"license\":\"GPL\",\"urls\":[\"bzz-raw://d8fd82fc7141a1f1f5ddcbd08ec59dbf062af4730e254c906f2bab32b5b73e37\",\"dweb:/ipfs/Qmc8mFGYuaNnyeUqNXjHrKnCF9ikvN1G2aQAUnsTXaRy2c\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL\n\npragma solidity 0.8.0;\n\ninterface IFOTAPricer {\n  function fotaPrice() external view returns (uint);\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAPricer.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAPricer.sol",
+    "exportedSymbols": {
+      "IFOTAPricer": [
+        10432
+      ]
+    },
+    "id": 10433,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10426,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:22"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10432,
+        "linearizedBaseContracts": [
+          10432
+        ],
+        "name": "IFOTAPricer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "ce114348",
+            "id": 10431,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fotaPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10427,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:2:22"
+            },
+            "returnParameters": {
+              "id": 10430,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10429,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10431,
+                  "src": "127:4:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10428,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "127:4:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "126:6:22"
+            },
+            "scope": 10432,
+            "src": "83:50:22",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10433,
+        "src": "57:78:22"
+      }
+    ],
+    "src": "33:103:22"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/interfaces/IFOTAPricer.sol",
+    "exportedSymbols": {
+      "IFOTAPricer": [
+        10432
+      ]
+    },
+    "id": 10433,
+    "license": "GPL",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10426,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:22"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10432,
+        "linearizedBaseContracts": [
+          10432
+        ],
+        "name": "IFOTAPricer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "ce114348",
+            "id": 10431,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fotaPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10427,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:2:22"
+            },
+            "returnParameters": {
+              "id": 10430,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10429,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10431,
+                  "src": "127:4:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10428,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "127:4:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "126:6:22"
+            },
+            "scope": 10432,
+            "src": "83:50:22",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10433,
+        "src": "57:78:22"
+      }
+    ],
+    "src": "33:103:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:51:26.511Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

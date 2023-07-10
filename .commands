@@ -1,0 +1,122 @@
+accounts = await web3.eth.getAccounts()
+itemAirdropDistributor = await ItemAirdropDistributor.deployed()
+heroToken = await HeroNFT.deployed()
+itemToken = await ItemNFT.deployed()
+app = await MarketPlace.deployed()
+
+itemAirdropDistributor.itemClassId()
+itemAirdropDistributor.buildHash(accounts[1], 5)
+itemAirdropDistributor.verifyPath(accounts[1], 5, ['0x87e604c56b2c0079dbf1b9b10f6317c37ba8a32635d8dc1739353bb58109fe82','0x2d6d39a1f858760c4325a9965347970ef5af12b2a43f397302a25e62cde37975','0x4e7ce9f67114b7d477cc081c6a393f3eeec54bef1e401c3663e37217deb56c07'])
+itemAirdropDistributor.isQualified(accounts[1], 5, ['0x87e604c56b2c0079dbf1b9b10f6317c37ba8a32635d8dc1739353bb58109fe82','0x2d6d39a1f858760c4325a9965347970ef5af12b2a43f397302a25e62cde37975','0x4e7ce9f67114b7d477cc081c6a393f3eeec54bef1e401c3663e37217deb56c07'])
+result = await itemAirdropDistributor.claim(5, ['0x87e604c56b2c0079dbf1b9b10f6317c37ba8a32635d8dc1739353bb58109fe82','0x2d6d39a1f858760c4325a9965347970ef5af12b2a43f397302a25e62cde37975','0x4e7ce9f67114b7d477cc081c6a393f3eeec54bef1e401c3663e37217deb56c07'], { from: accounts[1] })
+
+itemToken.updateMintAdmin(app.address, true)
+itemToken.updateMintAdmin(accounts[0], true)
+
+heroToken.updateMintAdmin(app.address, true)
+heroToken.updateMintAdmin(accounts[0], true)
+
+heroToken.mintHero(accounts[0], 1, 1, 1)
+heroToken.strengthIndexReference(0, 0, 0)
+
+app.listHeroes(0, 1, 0, 0, 'HERO', 1)
+app.listItems(0, 1, 1, 0, 1000000000)
+
+var response = heroToken.mintHero(accounts[0], 1, 1, 1)
+
+await heroToken.getPastEvents( 'allEvents', { fromBlock: 0, toBlock: 'latest' } )
+await heroToken.getHero(1633402259)
+await heroToken.getHeroPrices(1633402259)
+
+heroToken.ownerOf(1633402259)
+
+await heroToken.approve(app.address, 1633402259)
+
+await app.setMinLevel(0)
+await app.makeOrder(0, 0, 1633402259, 21, 12, 186400)
+await app._isMainAdmin()
+
+accounts = await web3.eth.getAccounts()
+itemToken = await ItemNFT.deployed()
+iUp = await ItemUpgrading.deployed()
+MBUSDToken = await MBUSDToken.deployed()
+ItemUpgradingMap = await ItemUpgradingMap.deployed()
+
+await itemToken.updateMintAdmin(accounts[0], true)
+
+res2 = await itemToken.mintItem(accounts[0], 1, 105, 1, 20)
+tokenId = res2.logs[0].args['2'].toNumber()
+res3 = await itemToken.mintItem(accounts[0], 0, 101, 1, 20)
+formulaId = res3.logs[0].args['2'].toNumber()
+iUp.updateFundAdmin(accounts[0])
+
+MBUSDToken.approve(iUp.address, '1000000000000000000000000000000000000000000000')
+itemToken.approve(iUp.address, tokenId)
+itemToken.approve(iUp.address, formulaId)
+itemToken.updateMintAdmin(iUp.address, true)
+iUp.setUsdToken(MBUSDToken.address, MBUSDToken.address)
+
+iUp.upgradeItem(201, [tokenId], formulaId, 0, 50, 'BinhCAO', '0x7a455006094c9a98c28c05862cad5e4391eacbbc59a67cb955029a7bf053853c7e5c017ca8916fdeb9519e9c276546561a74903ab3e802edb4ff00d611e5dde01b')
+
+MBUSDToken.transferFrom(accounts[0], iUp.address, '1000000000000000000');
+
+itemToken = await ItemNFT.deployed()
+
+await itemToken.getItem(34035126)
+await itemToken.getItem(34035127)
+await itemToken.getItem(34035129)
+await itemToken.getItem(34035130)
+await itemToken.getItem(34035131)
+
+
+
+web3.utils.fromWei('1b28c58d9696b40000')
+
+
+
+citizen = await Citizen.deployed()
+citizen.register(accounts[0], 'ACCC0', '0x0000000000000000000000000000000000000000')
+citizen.register(accounts[1], 'ACCC1', '0x0000000000000000000000000000000000000000', { from: accounts[1] })
+citizen.register(accounts[2], 'ACCC2', accounts[1], { from: accounts[2] })
+
+busdToken = await MBUSDToken.deployed()
+await busdToken.balanceOf(accounts[0])
+await busdToken.balanceOf(accounts[1])
+await busdToken.balanceOf(accounts[2])
+
+busdToken.transfer(accounts[1], '1000000000000000000000000')
+busdToken.transfer(accounts[2], '1000000000000000000000000')
+
+marketPlace = await MarketPlace.deployed()
+busdToken.approve(marketPlace.address, '10000000000000000000000000')
+busdToken.approve(marketPlace.address, '10000000000000000000000000', { from: accounts[2] })
+busdToken.approve(marketPlace.address, '10000000000000000000000000', { from: accounts[2] })
+
+marketPlace.updatePaymentType(2)
+
+heroesResult = await marketPlace.listHeroes(1, 1)
+heroId = heroesResult.logs[0].args.tokenId
+
+marketPlace.takeOrder(0, heroId, 1)
+
+heroNFT = await HeroNFT.deployed()
+heroNft.approve(marketPlace.address, heroId)
+heroNft.approve(marketPlace.address, heroId, { from: accounts[1] })
+marketPlace.makeOrder(0, 0, heroId, '1000000000000000000000', '1000000000000000000000', 604800, 604800)
+
+marketPlace.takeOrder(0, heroId, 1, { from: accounts[2] })
+
+busdToken.burn('1000000000000000000000000', { from: accounts[1] })
+busdToken.burn('999000000000000000000000', { from: accounts[2] })
+
+treasury = await Treasury.deployed()
+await busdToken.balanceOf(treasury.address)
+
+accounts = await web3.eth.getAccounts()
+energyManager = await EnergyManager.deployed()
+gamePVE = await FOTAGamePVE.deployed()
+
+gamePVE.finishGame(0, true, 10, '0x7c407c8f341f1d9b86931690fe725fb5e8a8694a01461aca916a3161c65a60bb53749255265dd0e76b33eb6b0561c474530f545b2066d4665b5d490e188d0b2f1b')
+
+igo = await IGO.deployed()
+igo._shuffle([2, 5, 7, 9, 3])

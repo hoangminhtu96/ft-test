@@ -1,0 +1,54 @@
+import ethers from 'ethers'
+import { ecsign } from 'ethereumjs-util'
+import { getMessage } from 'eip-712'
+
+async function signMessageLevelUp(verifyingContract, message) {
+  const typedData = {
+    types: {
+      EIP712Domain: [
+        { name: 'name', type: 'string' },
+        { name: 'version', type: 'string' },
+        { name: 'chainId', type: 'uint256' },
+        { name: 'verifyingContract', type: 'address' }
+      ],
+      LevelUp: [
+        { name: 'user', type: 'address' },
+        { name: 'level', type: 'uint256' },
+        { name: 'nonce', type: 'uint256' }
+      ]
+    },
+    primaryType: 'LevelUp',
+    domain: {
+      name: 'FOTA',
+      version: '1',
+      chainId: await web3.eth.getChainId(),
+      verifyingContract
+    },
+    message
+  };
+
+  console.log('await web3.eth.getChainId()', await web3.eth.getChainId())
+
+  const privateKey = Buffer.from(process.env.PRIVATE_KEY_DEV, 'hex')
+
+  const messageFromData = getMessage(typedData, true)
+  return ecsign(messageFromData, privateKey)
+  // const { r, s, v } = ecsign(messageFromData, privateKey)
+  // console.log(`Message: 0x${messageFromData.toString('hex')}`);
+  // console.log(`Signature: \nv: ${v} \nr: 0x${r.toString('hex')} \ns: 0x${s.toString('hex')}`);
+  // return { r, s, v }
+}
+
+async function getKey(index) {
+  const walletPath = {
+    standard: `m/44'/60'/0'/0/${index}`
+  }
+  const hdnode = ethers.utils.HDNode.fromMnemonic(process.env.MMNEMONIC)
+  const node = hdnode.derivePath(walletPath.standard)
+  return node.privateKey
+}
+
+export default {
+  signMessageLevelUp,
+  getKey
+}

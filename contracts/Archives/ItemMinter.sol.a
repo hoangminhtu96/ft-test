@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.0;
+
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import '@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol';
+import "../interfaces/IItemNFT.sol";
+
+contract ItemMinter is Initializable {
+  IItemNFT public itemNFT;
+  address public owner;
+
+  function initialize(address _itemNFTAddress) virtual public initializer {
+    itemNFT = IItemNFT(_itemNFTAddress);
+    owner = msg.sender;
+  }
+
+  modifier onlyOwner() {
+    require(msg.sender == owner, "ItemMinter: Invalid caller.");
+    _;
+  }
+
+  function mintItems(address[] calldata _addresses, uint[] calldata _quantities) external onlyOwner {
+    for (uint i = 0; i < _addresses.length; i += 1) {
+      itemNFT.mintItems(_addresses[i], 0, 1, 5 ether, _quantities[i]);
+    }
+  }
+}
+

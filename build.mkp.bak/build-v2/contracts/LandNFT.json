@@ -1,0 +1,112 @@
+{
+  "contractName": "LandNFT",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/NFTs/LandNFT.sol\":\"LandNFT\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/Users/dung/Documents/sources/fota-dapp/contracts/NFTs/LandNFT.sol\":{\"keccak256\":\"0xf3a408d6ae219c812773a73cabe86b98cf17c17ac136b578d77e81b9f32a94ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://026ebeea0f17a1c3539bb160ddd68b33347a215e175f21faf7ae06e4a438023a\",\"dweb:/ipfs/QmPBv4kWiqeZEdGunj3USYkqDficfEAFYHnw8UXmHxfiN5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d28537212c769c662078f3bfd3aa0c1e5cba09b71e23c9cd12810980ad433a9264736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d28537212c769c662078f3bfd3aa0c1e5cba09b71e23c9cd12810980ad433a9264736f6c63430008000033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "57:31:10:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:31:10:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\n\ncontract LandNFT {\n   // TODO\n}\n",
+  "sourcePath": "/Users/dung/Documents/sources/fota-dapp/contracts/NFTs/LandNFT.sol",
+  "ast": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/NFTs/LandNFT.sol",
+    "exportedSymbols": {
+      "LandNFT": [
+        8673
+      ]
+    },
+    "id": 8674,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8672,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:10"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8673,
+        "linearizedBaseContracts": [
+          8673
+        ],
+        "name": "LandNFT",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 8674,
+        "src": "57:31:10"
+      }
+    ],
+    "src": "33:56:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/dung/Documents/sources/fota-dapp/contracts/NFTs/LandNFT.sol",
+    "exportedSymbols": {
+      "LandNFT": [
+        8673
+      ]
+    },
+    "id": 8674,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8672,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:10"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 8673,
+        "linearizedBaseContracts": [
+          8673
+        ],
+        "name": "LandNFT",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 8674,
+        "src": "57:31:10"
+      }
+    ],
+    "src": "33:56:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-03-03T04:57:24.373Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
